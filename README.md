@@ -10,7 +10,7 @@ Features:
 - Clone it into your desktop
 ```
 git clone https://github.com/TOR968/flaskAPI.git
-cd fc_manager_api
+cd flaskAPI
 ```
 - Set up virtual environment
 ```
