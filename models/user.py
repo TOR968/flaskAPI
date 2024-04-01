@@ -6,4 +6,6 @@ class UserModel(db.Model):
     username = db.Column(db.String(50), unique=True, nullable=False)
     password = db.Column(db.String(80), nullable=False)
     full_name = db.Column(db.String(100), nullable=False)
-    teams = db.relationship("TeamModel", back_populates="managers", secondary="teams_managers")
+    teams = db.relationship(
+        "TeamModel", back_populates="managers", secondary="teams_managers"
+    )
